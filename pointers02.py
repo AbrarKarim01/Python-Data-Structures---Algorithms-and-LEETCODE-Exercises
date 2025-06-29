@@ -52,3 +52,5 @@ print("dict3:", dict3)
 print("\ndict points to", id(dict1))
 print("dict2 points to", id(dict2))
 print("dict3 points to", id(dict3))
+# GARBAGE COLLECTION
+# value 22 and 44 are not reflected in dict2 anymore and it will be handeld as garbage collection
