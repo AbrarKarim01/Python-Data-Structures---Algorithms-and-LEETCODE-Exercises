@@ -15,4 +15,4 @@ head = {
 print(head['next']['next']['value'])
 
 # This will only run with a linked list
-#print(my_linked_list.head.next.next.value)
+print(my_linked_list.head.next.next.value)
