@@ -5,7 +5,7 @@ class Node:
 
 class LinkedList:
     def __init__(self, value):
-        # create a new linked list with a head node
+        # create a new linked list with a head node (constructor)
         new_node = Node(value)
         self.head = new_node
         self.tail = new_node
@@ -14,11 +14,14 @@ class LinkedList:
     def append(self, value):
         new_node = Node(value)
         if self.head is None:
-            self.head = Node(value)
+            self.head = new_node
             self.tail = new_node # if the list is empty, set head and tail to the new node
         else:
             self.tail.next = new_node
             self.tail = new_node # update the tail to the new node
+
+        self.length += 1 # increment the length of the linked list
+        return True
 
     def print_list(self):
         temp = self.head
